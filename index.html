@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="mediaqueries.cs" />
+
+
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Shamah Amichoh</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">About</a></li>
+            <li><a href="#Contact">Experience</a></li>
+         </ul>   
+            
+    </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Shamah Amichoh</div>
+        <div class="hamburger-menue">
+        <div class="hamburger-icon" onclick="toggleMenue()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menue-links">
+            <li><a href="#about" onclick="toggleMenue()">About</a></li>
+            <li><a href="#Experience" onclick="toggleMenue()">Experience</a></li>
+            <li><a href="#Projects" onclick="toggleMenue()">About</a></li>
+            <li><a href="#Contact" onclick="toggleMenue()">Experience</a></li>
+             
+        </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pfp shamah.png" alt="Shamah Amichoh profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Shamah Amichoh</h1>
+            <p class="section__text__p2">Up and Comming Texas tech Honors Student</p>
+            <div class="btn-container">
+                <button class="btn-btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>

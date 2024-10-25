@@ -1,0 +1,90 @@
+/* Base Styling */
+
+/* important style from google styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+
+/* targets the whole page  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* targets the body */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* makes link clicks smooth instead of instant */
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(65, 65, 65);
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Nav BAr */
+/* makes the nav bar horrizontal instead of verticle */
+nav, .nav-links {
+    display: flex;
+}
+/* uses flexbox */
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+/* makes a gap between nav bar links, by certain rem(unit similar to pixels) */
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 2.6rem;
+}
+
+a {
+    color: rgb(red, green, rgb(4, 17, 0));
+    text-decoration-color: bisque;
+    text-decoration: none;
+}
+
+a:hover {
+    color: beige;
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
+    text-underline-offset: 1rem;
+}
+.logo {
+    font-size: 2rem;
+}
+/* makes it so when you hover over the logo the cursur doesnt change */
+.logo:hover {
+    cursor: default;
+}
+ /* hamburger menue */
+
+  #ham-nav{
+    display: none;
+ }
+
+ .hamburger-menue{
+    position: relative;
+    display: inline-block;
+ }
+
+ .hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+ }
